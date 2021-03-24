@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+    position: relative;
+}
+
+html {
+    background: #fafafa;
+}
+
+body {
+    min-height: 100vh;
+    max-width: 650px;
+    margin: 0 auto;
+    font-family: arial, sans-serif;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    padding: 0 0 3rem 0;
+    flex-grow: 1;
+}
+
+.not-found {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    display: grid;
+    place-items: center;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+footer {
+    border-top: 1px solid rgb(194, 193, 193);
+    color: rgb(153, 153, 153);
+    text-align: center;
+}
+
+button {
+    background-color: white;
+    border: solid 4px palevioletred;
+    color: palevioletred;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    color: #fff;
+    background-color: palevioletred;
+}
+
+img {
+    max-width: 80%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+}
+
+input[type='text'] {
+    padding: 0.6rem 0.3rem;
+    border: solid 4px palevioletred;
+    outline: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    flex-grow: 1;
+}
+
+input[type='submit'] {
+    background: white;
+    border: solid 4px palevioletred;
+    color: palevioletred;
+    padding: 0.6rem 2rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 0.3rem;
+    outline: none;
+}
+input[type='submit']:hover {
+    color: #fff;
+    background: palevioletred;
+}
+
+.weather {
+    text-align: center;
+    font-size: 2.5rem;
+}
