@@ -23,9 +23,9 @@ weatherForm.addEventListener('submit', e => {
         })
         .then(({ location, forecastData, error } = {}) => {
             if (!error)
-                forecastElement.textContent = `In ${location} is ${forecastData.weatherDescription.toLowerCase()}, the temperature is ${
-                    forecastData.temperature
-                }C and feels like ${forecastData.feelslike}C`;
+                forecastElement.textContent = `In ${location} is ${forecastData.weatherDescription.toLowerCase()},the humidity level is at ${
+                    forecastData.humidity
+                }%, the temperature is ${forecastData.temperature} °C and feels like ${forecastData.feelslike} °C.`;
         })
         .catch(error => {
             console.log(error);
